@@ -10,7 +10,7 @@
 /plugin/;
 
 #include <dt-bindings/gpio/gpio.h>
-#include "ti/k3-pinctrl.h"
+#include <dt-bindings/pinctrl/k3-pinctrl.h>
 
 /*
  * Helper to show loaded overlays under: /proc/device-tree/chosen/overlays/

@@ -12,7 +12,7 @@
 #include <dt-bindings/net/ti-dp83867.h>
 #include <dt-bindings/phy/phy.h>
 #include "k3-j722s.dtsi"
-#include "k3-serdes.h"
+#include <dt-bindings/pinctrl/k3-serdes.h>
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/pwm/pwm.h>
 #include "k3-am67a-beagley-ai-pinmux.dtsi"

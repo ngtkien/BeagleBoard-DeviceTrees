@@ -11,8 +11,8 @@
 #include <dt-bindings/net/ti-dp83867.h>
 #include <dt-bindings/phy/phy.h>
 #include "k3-j722s.dtsi"
-#include "k3-serdes.h"
-#include "k3-timesync-router.h"
+#include <dt-bindings/pinctrl/k3-serdes.h>
+#include <dt-bindings/pinctrl/k3-timesync-router.h>
 
 / {
 	compatible = "ti,j722s-evm", "ti,j722s";
