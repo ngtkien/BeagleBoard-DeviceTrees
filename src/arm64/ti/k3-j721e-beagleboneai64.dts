@@ -430,7 +430,7 @@
 	csi0_gpio_pins_default: csi0-gpio-default-pins {
 		pinctrl-single,pins = <
 			J721E_IOPAD(0x19c, PIN_INPUT_PULLDOWN, 7) /* (W27) RGMII6_TD0.GPIO0_102 */
-			// J721E_IOPAD(0x1a0, PIN_INPUT_PULLDOWN, 7) /* (W29) RGMII6_TXC.GPIO0_103 */
+			J721E_IOPAD(0x1a0, PIN_INPUT_PULLDOWN, 7) /* (W29) RGMII6_TXC.GPIO0_103 */
 		>;
 	};
 
@@ -447,6 +447,11 @@
 		>;
 	};
 
+	csi1_imx708_gpio_pins: csi1-imx708-gpio-pins {
+		pinctrl-single,pins = <
+			J721E_IOPAD(0x198, PIN_OUTPUT, 7) /* (V25) RGMII6_TD1.GPIO0_101 */
+		>;
+	};
 	pcie1_rst_pins_default: pcie1-rst-default-pins {
 		pinctrl-single,pins = <
 			J721E_IOPAD(0x5c, PIN_INPUT, 7) /* (AG23) PRG1_PRU1_GPO1.GPIO0_22 */
@@ -664,7 +669,7 @@
 &main_gpio0 {
 	status = "okay";
 	pinctrl-names = "default";
-	pinctrl-0 = <&csi1_gpio_pins_default>;
+	// pinctrl-0 = <&csi1_gpio_pins_default>;
 };
 &main_gpio1 {
 	status = "okay";
